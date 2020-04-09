@@ -1,1 +1,1 @@
-html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::before,*::after{-webkit-box-sizing:inherit;box-sizing:inherit}.box{padding:0;margin:0}
+.header{position:relative;background-color:#e9eae2}.header .arrows{position:absolute;top:0;left:20px}.header .title,.header .price{font-size:28px;font-family:'Roboto', sans-serif;font-weight:300;color:#969693}

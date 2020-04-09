@@ -1,14 +1,21 @@
-html{
-    box-sizing: border-box;
+.header{
+    position: relative;
+    background-color: #e9eae2;
+    .arrows{
+        position: absolute;
+        top: 0;
+        left: 20px;
+    }
+    .title,
+    .price{
+        font-size: 28px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: #969693;
+    }
 }
 
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
 
-.box{
-    padding: 0;
-    margin: 0;
-}
+  
+
+  
