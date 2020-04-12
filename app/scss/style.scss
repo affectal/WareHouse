@@ -155,6 +155,10 @@
                 }
             }
         }
+        .image-room {
+            width: 382px;
+            height: 665px;
+        }
         .drop-down__inner {
             width: 382px;
             height: 665px;
@@ -200,6 +204,8 @@
             }
         }
         .drop-down__inner.search {
+            width: 382px;
+            height: 665px;
             form {
                 position: relative;
                 .search {
@@ -227,10 +233,6 @@
                     right: 0;
                 }
             }
-        }
-        .image-room {
-            max-width: 382px;
-            max-height: 665px;
         }
     }
 }
