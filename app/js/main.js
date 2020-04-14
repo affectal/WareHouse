@@ -31,6 +31,7 @@ $('.slider').slick({
     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
     slidesToShow: 1,
     slidesToScroll: 1,
+    adaptiveHeight: true,
     dots: false,
     arrows: true
 });
