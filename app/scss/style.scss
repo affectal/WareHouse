@@ -210,11 +210,6 @@
                         cursor: pointer;
                     }
                 }
-                // @media (max-width: 1280px) {
-                //     .cross {
-                //         height: 30px;
-                //     }
-                // }
                 .inner__box {
                     display: flex;
                     flex-wrap: wrap;
@@ -377,6 +372,46 @@
             .content__price {
                 font-size: 34.7px;
                 margin: 15px 0 40px;
+            }
+            label {
+                position: relative;
+                padding-left: 22px;
+                cursor: pointer;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 17px;
+                    background-image: url(../images/heart.png);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &::after {
+                    content: 'ADD TO FAVS';
+                    font-size: 16.7px;
+                    font-weight: 300;
+                    color: #b3afaf;
+                }
+            }
+            #check,
+            #check1,
+            #check2 {
+                display: none;
+                &:checked+label::before {
+                    content: '';
+                    width: 16px;
+                    height: 17px;
+                    background-image: url(../images/heart-click.png);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+                &:checked+label::after {
+                    content: 'FAVED';
+                    font-size: 16.7px;
+                    font-weight: 300;
+                    color: #b3afaf;
+                }
             }
             .image-item {
                 position: absolute;

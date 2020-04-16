@@ -35,3 +35,8 @@ $('.slider').slick({
     dots: false,
     arrows: true
 });
+
+
+$('.check > :checkbox').click(function() {
+    this.nextSibling.nodeValue = (this.checked) ? 'FAVED' : 'ADD TO FAVS';
+});
