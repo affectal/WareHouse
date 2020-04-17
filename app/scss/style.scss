@@ -3,6 +3,89 @@
 // HEADER start
 .header {
     height: 665px;
+    .header__inner {
+        max-width: 550px;
+        width: 100%;
+        position: relative;
+        .header__wrapper {
+            width: 100%;
+            height: 283px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .logotype {
+                margin: 20px 0 0 20px;
+            }
+            .poligon {
+                width: 343px;
+                background-repeat: no-repeat;
+                text-align: center;
+                margin-right: 23px;
+                .salt-bottle {
+                    padding: 87px 0 0 8px;
+                }
+            }
+        }
+        .slider__wrapper {
+            position: relative;
+            max-width: 560px;
+            width: 100%;
+            .slider {
+                position: absolute;
+                left: 0;
+                top: -215px;
+                width: 560px;
+                padding-top: 100px;
+                .slider__item {
+                    display: flex;
+                    height: 490px;
+                    background-repeat: no-repeat;
+                    background-position: right;
+                }
+                .image {
+                    max-width: 343px;
+                    width: 100%;
+                    position: relative;
+                    z-index: 2;
+                }
+                .title-price {
+                    width: 280px;
+                    font-size: 28px;
+                    line-height: 38px;
+                    font-weight: 300;
+                    color: #969693;
+                    padding-left: 50px;
+                    padding-top: 45px;
+                }
+            }
+            .slick-arrow {
+                position: absolute;
+                top: 35px;
+                font-family: 'Linearicons-Free';
+                color: #c19226;
+                border: none;
+                background-color: transparent;
+                font-size: 16px;
+                outline: none;
+                cursor: pointer;
+                &:hover {
+                    font-weight: 900;
+                }
+            }
+            .slick-prev {
+                left: 315px;
+                &::after {
+                    content: '\e875';
+                }
+            }
+            .slick-next {
+                left: 375px;
+                &::after {
+                    content: '\e876';
+                }
+            }
+        }
+    }
     .menu-item {
         width: 70px;
         height: 60px;
@@ -45,141 +128,67 @@
             left: 22.5px;
         }
     }
-    .header__wrapper {
-        max-width: 527px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .logotype {
-            margin: 20px 0 0 20px;
-        }
-        .poligon {
-            width: 343px;
-            background-repeat: no-repeat;
-            text-align: center;
-            .salt-bottle {
-                padding: 87px 0 0 8px;
-            }
-        }
-    }
-    .top__menu {
-        display: flex;
-        align-items: center;
-        height: 100px;
-        margin: 20px 20px 0 0;
-        .list {
-            display: flex;
-            width: 702px;
-            height: 102px;
-            padding: 1px 0 0 1px;
-            display: none;
-            a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100px;
-                height: 100px;
-                text-align: center;
-                list-style: none;
-                color: #3ab3a6;
-                transition: all .3s;
-                &:hover {
-                    border: 1px solid #3ab3a6;
-                    border-radius: 4px;
-                }
-            }
-        }
-        .list-search {
-            position: relative;
-            display: none;
-            .search {
-                background-color: #e9eae2;
-                display: block;
-                width: 500px;
-                height: 60px;
-                border: 1px solid #3ab3a6;
-                font-size: 25px;
-                font-weight: 300;
-                font-family: "Roboto Condensed";
-                color: #3ab3a6;
-                padding: 0 15px 0;
-            }
-            button {
-                width: 70px;
-                height: 60px;
-                background-color: #e9eae2;
-                background-image: url(../images/search.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                border: 1px solid #3ab3a6;
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-        }
-    }
-    .inner-content {
-        position: relative;
-        max-width: 560px;
-        width: 100%;
-        .slider {
-            max-width: 620px;
-            padding-top: 100px;
-            .slider__item {
-                display: flex;
-                width: 530px;
-                height: 459px;
-                background-repeat: no-repeat;
-                background-position: right;
-            }
-            .image {
-                max-width: 343px;
-                width: 100%;
-                position: relative;
-                z-index: 2;
-            }
-            .title-price {
-                width: 280px;
-                font-size: 28px;
-                line-height: 38px;
-                font-weight: 300;
-                color: #969693;
-                padding-left: 50px;
-                padding-top: 45px;
-            }
-        }
-        .slick-arrow {
-            position: absolute;
-            top: 35px;
-            font-family: 'Linearicons-Free';
-            color: #c19226;
-            border: none;
-            background-color: transparent;
-            font-size: 16px;
-            outline: none;
-            cursor: pointer;
-            &:hover {
-                font-weight: 900;
-            }
-        }
-        .slick-prev {
-            left: 318px;
-            &::after {
-                content: '\e875';
-            }
-        }
-        .slick-next {
-            left: 375px;
-            &::after {
-                content: '\e876';
-            }
-        }
-    }
     .inner {
         display: flex;
         max-width: 940px;
         width: 100%;
         position: relative;
+        .top__menu {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            margin: 20px 20px 0 0;
+            .list {
+                display: flex;
+                width: 702px;
+                height: 102px;
+                padding: 1px 0 0 1px;
+                display: none;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    list-style: none;
+                    color: #3ab3a6;
+                    transition: all .3s;
+                    &:hover {
+                        border: 1px solid #3ab3a6;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            .list-search {
+                position: relative;
+                display: none;
+                .search {
+                    background-color: #e9eae2;
+                    display: block;
+                    width: 500px;
+                    height: 60px;
+                    border: 1px solid #3ab3a6;
+                    font-size: 25px;
+                    font-weight: 300;
+                    font-family: "Roboto Condensed";
+                    color: #3ab3a6;
+                    padding: 0 15px 0;
+                }
+                button {
+                    width: 70px;
+                    height: 60px;
+                    background-color: #e9eae2;
+                    background-image: url(../images/search.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border: 1px solid #3ab3a6;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
         .author {
             max-width: 488px;
             width: 100%;

@@ -36,19 +36,18 @@ $('.slider').slick({
     arrows: true
 });
 
+
 $('.menu-item.home').on('click', function() {
     $('.list.favourites').hide('slow');
     $('.list-search').hide('slow');
     $('.list.home').toggle('slow').css('display', 'flex');
 });
 
-
 $('.menu-item.favourites').on('click', function() {
     $('.list.home').hide('slow');
     $('.list-search').hide('slow');
     $('.list.favourites').toggle('slow').css('display', 'flex');
 });
-
 
 $('.menu-item.search').on('click', function() {
     $('.list.home').hide('slow');
