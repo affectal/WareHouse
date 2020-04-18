@@ -31,25 +31,24 @@ $('.slider').slick({
     prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
     dots: false,
-    arrows: true
+    arrows: true,
 });
 
 
-$('.menu-item.home').on('click', function() {
+$('.top__menu-icon.home').on('click', function() {
     $('.list.favourites').hide('slow');
     $('.list-search').hide('slow');
     $('.list.home').toggle('slow').css('display', 'flex');
 });
 
-$('.menu-item.favourites').on('click', function() {
+$('.top__menu-icon.favourites').on('click', function() {
     $('.list.home').hide('slow');
     $('.list-search').hide('slow');
     $('.list.favourites').toggle('slow').css('display', 'flex');
 });
 
-$('.menu-item.search').on('click', function() {
+$('.top__menu-icon.search').on('click', function() {
     $('.list.home').hide('slow');
     $('.list.favourites').hide('slow');
     $('.list-search').toggle('slow');
