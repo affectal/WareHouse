@@ -32,24 +32,11 @@ $('.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
-    arrows: true,
+    arrows: true
 });
 
 
-$('.top__menu-icon.home').on('click', function() {
-    $('.list.favourites').hide('slow');
-    $('.list-search').hide('slow');
-    $('.list.home').toggle('slow').css('display', 'flex');
-});
-
-$('.top__menu-icon.favourites').on('click', function() {
-    $('.list.home').hide('slow');
-    $('.list-search').hide('slow');
-    $('.list.favourites').toggle('slow').css('display', 'flex');
-});
-
-$('.top__menu-icon.search').on('click', function() {
-    $('.list.home').hide('slow');
-    $('.list.favourites').hide('slow');
+$('.top__icon.search').on('click', function() {
+    $('.top__menu-inner').hide('slow');
     $('.list-search').toggle('slow');
 });
